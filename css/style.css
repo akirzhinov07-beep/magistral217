@@ -138,6 +138,20 @@ section.compact { padding: 64px 0; }
 .project-item { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
 .project-item.reverse { direction: rtl; }
 .project-item.reverse > * { direction: ltr; }
+
+.projects-grid-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 48px; }
+.project-card-item { background: #fff; border-radius: var(--radius-lg); padding: 28px 28px 32px; border: 1px solid var(--border); transition: all var(--transition); }
+.project-card-item:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: rgba(196,154,0,0.3); }
+.project-card-label { font-size: 11px; font-weight: 700; letter-spacing: 0.10em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; background: var(--accent-light); display: inline-block; padding: 4px 10px; border-radius: 40px; }
+.project-card-item h3 { font-size: 17px; font-weight: 600; color: var(--text); margin-bottom: 10px; line-height: 1.35; }
+.project-card-item p { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+
+.projects-current { background: var(--bg-dark); border-radius: var(--radius-lg); padding: 40px 48px; }
+.projects-current-label { font-size: 11px; font-weight: 700; letter-spacing: 0.10em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+.projects-current p { color: rgba(255,255,255,0.6); font-size: 15px; margin-bottom: 20px; }
+.projects-current-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.projects-current-list li { color: rgba(255,255,255,0.85); font-size: 15px; padding-left: 20px; position: relative; }
+.projects-current-list li::before { content: ''; position: absolute; left: 0; top: 10px; width: 6px; height: 6px; background: var(--accent); border-radius: 50%; }
 .project-label { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
 .project-text h3 { color: var(--text); margin-bottom: 16px; }
 .project-text p { margin-bottom: 12px; }

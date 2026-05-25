@@ -48,24 +48,54 @@
 
 <section class="projects-section">
   <div class="container">
-    <div class="section-header fade-up"><span class="section-eyebrow">Реализованные проекты</span><h2>Опыт, подтверждённый результатами</h2><p>Несколько примеров из нашей практики — объекты разного масштаба и назначения.</p></div>
-    <div class="projects-list">
-      <div class="project-item fade-up">
-        <div class="project-text"><div class="project-label">Дорожное строительство</div><h3>Реконструкция участка трассы М-4 «Дон»</h3><p>Комплексная поставка геосинтетических материалов, дренажных труб и систем водоотвода для реконструкции 38-километрового участка федеральной трассы.</p><p>Выполнено проектирование дренажной системы, подбор геотекстиля для армирования насыпи, поставка гофрированных труб диаметром до 2000 мм.</p></div>
-        <div class="project-img"><div class="project-img-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>Фотография объекта</span></div></div>
+    <div class="section-header fade-up"><span class="section-eyebrow">Реализованные проекты</span><h2>Опыт, подтверждённый результатами</h2><p>Объекты, в которых мы участвовали — дороги, аэропорты, городское благоустройство по всей России.</p></div>
+    <div class="projects-grid-list">
+      <div class="project-card-item fade-up">
+        <div class="project-card-label">Аэропортовое строительство</div>
+        <h3>Реконструкция аэропорта Уйташ, г. Махачкала</h3>
+        <p>Поставка лотков на взлётно-посадочную полосу.</p>
       </div>
-      <div class="project-item reverse fade-up">
-        <div class="project-text"><div class="project-label">Аэропортовое строительство</div><h3>Расширение аэродрома гражданской авиации</h3><p>Поставка специализированных материалов для строительства рулёжной дорожки: цементобетонное покрытие, дренажные лотки, светосигнальное оборудование.</p><p>Объём поставки составил более 5000 тонн материалов. Срок выполнения — 4 месяца при строгих требованиях по качеству.</p></div>
-        <div class="project-img"><div class="project-img-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>Фотография объекта</span></div></div>
+      <div class="project-card-item fade-up fade-up-delay-1">
+        <div class="project-card-label">Дорожное строительство</div>
+        <h3>Автомобильная дорога на курорт Мамисон</h3>
+        <p>Поставка сборных подпорных стен.</p>
       </div>
-      <div class="project-item fade-up">
-        <div class="project-text"><div class="project-label">Городское благоустройство</div><h3>Благоустройство набережной в г. Краснодар</h3><p>Разработка проекта и поставка материалов для обустройства 1,2 км набережной: системы дренажа, тротуарная плитка, уличная мебель, осветительное оборудование.</p><p>Проект реализован в сжатые сроки — 3 месяца от подписания договора до сдачи объекта.</p></div>
-        <div class="project-img"><div class="project-img-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>Фотография объекта</span></div></div>
+      <div class="project-card-item fade-up fade-up-delay-2">
+        <div class="project-card-label">Городское благоустройство</div>
+        <h3>Реконструкция улиц в г. Дербент</h3>
+        <p>Поставка канализационных труб, лотков водоотводных, архитектурных опор освещения.</p>
       </div>
-      <div class="project-item reverse fade-up">
-        <div class="project-text"><div class="project-label">Гражданское строительство</div><h3>Жилой квартал — инженерные системы</h3><p>Комплексная поставка материалов для инженерного оснащения жилого квартала на 2400 квартир: ливневая канализация, системы дренажа подземных парковок, наружные инженерные сети.</p><p>Полный цикл: проектирование, согласование, поставка и авторский надзор за монтажом.</p></div>
-        <div class="project-img"><div class="project-img-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>Фотография объекта</span></div></div>
+      <div class="project-card-item fade-up fade-up-delay-3">
+        <div class="project-card-label">Дорожное строительство</div>
+        <h3>Обход г. Пятигорск</h3>
+        <p>Поставка ограждения тип Нью-Джерси.</p>
       </div>
+      <div class="project-card-item fade-up fade-up-delay-1">
+        <div class="project-card-label">Городское благоустройство</div>
+        <h3>Строительство набережной в г. Дербент</h3>
+        <p>Поставка лотков водоотводных.</p>
+      </div>
+      <div class="project-card-item fade-up fade-up-delay-2">
+        <div class="project-card-label">Городское благоустройство</div>
+        <h3>Капитальный ремонт улиц в г. Нальчик</h3>
+        <p>Поставка канализационных труб, лотков водоотводных, архитектурных опор освещения.</p>
+      </div>
+      <div class="project-card-item fade-up fade-up-delay-3">
+        <div class="project-card-label">Городское благоустройство</div>
+        <h3>Капитальный ремонт улиц в г. Цхинвал</h3>
+        <p>Поставка лотков водоотводных.</p>
+      </div>
+    </div>
+
+    <div class="projects-current fade-up">
+      <div class="projects-current-label">Текущие объекты</div>
+      <p>На сегодняшний день компания ведёт поставки на следующие объекты:</p>
+      <ul class="projects-current-list">
+        <li>Ремонт автомобильной дороги Р-132 «Золотое Кольцо» — Калужская область</li>
+        <li>Капитальный ремонт ул. Толстого — г. Нальчик</li>
+        <li>Обход г. Дербент</li>
+        <li>Строительство подъезда к Махачкалинскому морскому порту</li>
+      </ul>
     </div>
   </div>
 </section>

@@ -49,54 +49,39 @@
 <section class="projects-section">
   <div class="container">
     <div class="section-header fade-up"><span class="section-eyebrow">Реализованные проекты</span><h2>Опыт, подтверждённый результатами</h2><p>Объекты, в которых мы участвовали — дороги, аэропорты, городское благоустройство по всей России.</p></div>
+    <?php
+    $projectsFile = __DIR__ . '/data/projects.json';
+    $allProjects = file_exists($projectsFile) ? json_decode(file_get_contents($projectsFile), true) : [];
+    if (!is_array($allProjects)) $allProjects = [];
+    $done    = array_values(array_filter($allProjects, fn($p) => empty($p['current'])));
+    $current = array_values(array_filter($allProjects, fn($p) => !empty($p['current'])));
+    ?>
+    <?php if (!empty($done)): ?>
     <div class="projects-grid-list">
-      <div class="project-card-item fade-up">
-        <div class="project-card-label">Аэропортовое строительство</div>
-        <h3>Реконструкция аэропорта Уйташ, г. Махачкала</h3>
-        <p>Поставка лотков на взлётно-посадочную полосу.</p>
+      <?php foreach ($done as $i => $proj): ?>
+      <div class="project-card-item fade-up <?= $i > 0 ? 'fade-up-delay-' . min($i, 4) : '' ?>">
+        <?php if (!empty($proj['image'])): ?>
+          <img src="<?= htmlspecialchars($proj['image']) ?>" alt="<?= htmlspecialchars($proj['title']) ?>" class="project-card-img">
+        <?php endif; ?>
+        <div class="project-card-label"><?= htmlspecialchars($proj['label'] ?? '') ?></div>
+        <h3><?= htmlspecialchars($proj['title']) ?></h3>
+        <?php if (!empty($proj['description'])): ?><p><?= htmlspecialchars($proj['description']) ?></p><?php endif; ?>
       </div>
-      <div class="project-card-item fade-up fade-up-delay-1">
-        <div class="project-card-label">Дорожное строительство</div>
-        <h3>Автомобильная дорога на курорт Мамисон</h3>
-        <p>Поставка сборных подпорных стен.</p>
-      </div>
-      <div class="project-card-item fade-up fade-up-delay-2">
-        <div class="project-card-label">Городское благоустройство</div>
-        <h3>Реконструкция улиц в г. Дербент</h3>
-        <p>Поставка канализационных труб, лотков водоотводных, архитектурных опор освещения.</p>
-      </div>
-      <div class="project-card-item fade-up fade-up-delay-3">
-        <div class="project-card-label">Дорожное строительство</div>
-        <h3>Обход г. Пятигорск</h3>
-        <p>Поставка ограждения тип Нью-Джерси.</p>
-      </div>
-      <div class="project-card-item fade-up fade-up-delay-1">
-        <div class="project-card-label">Городское благоустройство</div>
-        <h3>Строительство набережной в г. Дербент</h3>
-        <p>Поставка лотков водоотводных.</p>
-      </div>
-      <div class="project-card-item fade-up fade-up-delay-2">
-        <div class="project-card-label">Городское благоустройство</div>
-        <h3>Капитальный ремонт улиц в г. Нальчик</h3>
-        <p>Поставка канализационных труб, лотков водоотводных, архитектурных опор освещения.</p>
-      </div>
-      <div class="project-card-item fade-up fade-up-delay-3">
-        <div class="project-card-label">Городское благоустройство</div>
-        <h3>Капитальный ремонт улиц в г. Цхинвал</h3>
-        <p>Поставка лотков водоотводных.</p>
-      </div>
+      <?php endforeach; ?>
     </div>
+    <?php endif; ?>
 
+    <?php if (!empty($current)): ?>
     <div class="projects-current fade-up">
       <div class="projects-current-label">Текущие объекты</div>
       <p>На сегодняшний день компания ведёт поставки на следующие объекты:</p>
       <ul class="projects-current-list">
-        <li>Ремонт автомобильной дороги Р-132 «Золотое Кольцо» — Калужская область</li>
-        <li>Капитальный ремонт ул. Толстого — г. Нальчик</li>
-        <li>Обход г. Дербент</li>
-        <li>Строительство подъезда к Махачкалинскому морскому порту</li>
+        <?php foreach ($current as $proj): ?>
+        <li><?= htmlspecialchars($proj['title']) ?></li>
+        <?php endforeach; ?>
       </ul>
     </div>
+    <?php endif; ?>
   </div>
 </section>
 

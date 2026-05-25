@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Панель управления"
+AuthUserFile /home/a1218054/domains/magistral-r217.ru/public_html/admin/.htpasswd
+Require valid-user

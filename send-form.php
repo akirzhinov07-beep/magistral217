@@ -15,7 +15,7 @@ if (!$name || !$phone) {
 }
 
 // Send email — замените на ваш email
-$to      = 'info@magistral-r217.ru';
+$to      = 'Magistral217@gmail.com';
 $subject = 'Новая заявка с сайта Магистраль Р-217';
 $body    = "Имя: $name\nТелефон: $phone\nEmail: $email\n\nСообщение:\n$message";
 $headers = "From: noreply@magistral-r217.ru\r\nReply-To: $email\r\nContent-Type: text/plain; charset=UTF-8";

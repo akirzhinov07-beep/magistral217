@@ -14,8 +14,8 @@
       </div>
       <div class="footer-links">
         <h5>Контакты</h5>
-        <a href="tel:+74951234567">+7 (495) 123-45-67</a>
-        <a href="mailto:info@magistral-r217.ru">info@magistral-r217.ru</a>
+        <a href="tel:+79994922223">+7 (999) 492-22-23</a>
+        <a href="mailto:Magistral217@gmail.com">Magistral217@gmail.com</a>
       </div>
     </div>
     <div class="footer-bottom">

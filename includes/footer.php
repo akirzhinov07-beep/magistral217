@@ -2,7 +2,7 @@
   <div class="container-wide">
     <div class="footer-inner">
       <div class="footer-brand">
-        <div class="footer-logo">Магистраль <span>Р-217</span></div>
+        <img src="img/logo.svg" alt="Магистраль Р-217" class="footer-logo-img">
         <p class="footer-desc">Проектирование и поставки материалов для гражданского строительства, автомобильных дорог и аэропортов.</p>
       </div>
       <div class="footer-links">

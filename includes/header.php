@@ -3,7 +3,10 @@ $current = basename($_SERVER['PHP_SELF']);
 ?>
 <nav class="nav">
   <div class="nav-inner">
-    <a href="index.php" class="nav-logo">Магистраль <span>Р-217</span></a>
+    <a href="index.php" class="nav-logo">
+      <img src="img/logo.svg" alt="Магистраль Р-217" class="nav-logo-img">
+      <span class="nav-logo-text">Магистраль <em>Р-217</em></span>
+    </a>
     <ul class="nav-links">
       <li><a href="index.php" <?= $current === 'index.php' ? 'class="active"' : '' ?>>Главная</a></li>
       <li><a href="assortment.php" <?= $current === 'assortment.php' ? 'class="active"' : '' ?>>Ассортимент</a></li>

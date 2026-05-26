@@ -62,8 +62,8 @@
     </div>
     <div class="stats-grid">
       <div class="stat-item fade-up fade-up-delay-1"><div class="stat-number">10<span>+</span></div><div class="stat-label">лет на рынке</div></div>
-      <div class="stat-item fade-up fade-up-delay-2"><div class="stat-number">500<span>+</span></div><div class="stat-label">реализованных проектов</div></div>
-      <div class="stat-item fade-up fade-up-delay-3"><div class="stat-number">50<span>+</span></div><div class="stat-label">регионов России</div></div>
+      <div class="stat-item fade-up fade-up-delay-2"><div class="stat-number">100<span>+</span></div><div class="stat-label">реализованных проектов</div></div>
+      <div class="stat-item fade-up fade-up-delay-3"><div class="stat-number">20<span>+</span></div><div class="stat-label">регионов России</div></div>
       <div class="stat-item fade-up fade-up-delay-4"><div class="stat-number">1000<span>+</span></div><div class="stat-label">позиций в ассортименте</div></div>
     </div>
   </div>
